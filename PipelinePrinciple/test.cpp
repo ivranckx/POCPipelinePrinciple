@@ -23,7 +23,7 @@ TEST(TestCascadedOperations, TestIfOneFilterCanBeApplied)
 	//......
 	
 	//	Apply filtering operations...
-	oneFilter.filter(std::vector<double>{ 0, 1, 2, 3});
+	oneFilter.filter<>(std::vector<double>{ 0, 1, 2, 3});
 	EXPECT_EQ(1, 1);
 }
 
@@ -35,7 +35,7 @@ TEST(TestCascadedOperations, TestIfOneOperationCanBeApplied)
 		});
 
 	oneTransformation.properties.correctionFactor = "updated parameter";
-	oneTransformation.transform(std::vector<double>{ 0, 1, 2, 3});
+	oneTransformation.transform<>(std::vector<double>{ 0, 1, 2, 3});
 	EXPECT_EQ(1, 1);	
 }
 
