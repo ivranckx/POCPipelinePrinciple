@@ -12,7 +12,7 @@ namespace pip
 		PropertySheet properties;
 		std::vector<std::variant <Ops...>> operations;
 
-		CascadedOperation(const std::vector<std::variant <Ops...>> &operations) : operations(operations) {};
+		CascadedOperation(const std::vector<std::variant<Ops...>> &operations) : operations(operations) {};
 
 		template <typename INPUT = double>
 		auto filter(const std::vector<INPUT> &input)

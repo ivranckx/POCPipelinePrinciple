@@ -13,7 +13,7 @@ namespace pip
 
 			/// <summary>
 			/// If we make this type specific, i.e. INPUT = cv::Mat, the compiler will automatically grab the right function;
-			/// Remove the template argument if things come together!  
+			/// Remove the template argument below if things come together!  
 			/// </summary>
 			std::function<bool(const INPUT&, double)> apply = [](const INPUT &input, double blurringFactor = 0)
 			{
@@ -60,12 +60,12 @@ namespace pip
 				{
 					return arg.apply(i, areaFactor);
 				};
-			}
+			};
 
+			double blurringFactor = 0.0;
 			/// <summary>
 			/// Bluring filter properties & functionality
 			/// </summary>
-			double blurringFactor = 0.0;
 
 			auto polymorf(const pip::filters::Blur<INPUT>& arg)
 			{
@@ -73,7 +73,7 @@ namespace pip
 				{
 					return arg.apply(i, blurringFactor);
 				};
-			}
+			};
 
 			/// <summary>
 			/// Breach filter properties & functionality
@@ -84,7 +84,7 @@ namespace pip
 				{
 					return arg.apply(i);
 				};
-			}
+			};
 		};
 	};
 };
