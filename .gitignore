@@ -16,3 +16,7 @@ PipelinePrinciple/x64/Debug/
 *.testlog
 
 *.pdb
+
+*.opendb
+
+.vs/PipelinePrinciple/v16/.suo
