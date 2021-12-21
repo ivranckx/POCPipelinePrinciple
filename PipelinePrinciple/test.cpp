@@ -2,14 +2,14 @@
 #include "Pipeline.h"
 
 typedef pip::CascadedOperation<
-	pip::properties::FilterProperties,
-	pip::filters::Blur,
-	pip::filters::Breach,
-	pip::filters::Area> ANYFILTEROPS;
+	pip::properties::FilterProperties<>,
+	pip::filters::Blur<>,
+	pip::filters::Breach<>,
+	pip::filters::Area<>> ANYFILTEROPS;
 
 typedef pip::CascadedOperation<
-	pip::properties::TransformationProperties, 
-	pip::transformations::ARCorrection> ANYTRANSOPS;
+	pip::properties::TransformationProperties<>, 
+	pip::transformations::ARCorrection<>> ANYTRANSOPS;
 
 TEST(TestCascadedOperations, TestIfOneFilterCanBeApplied)
 {
