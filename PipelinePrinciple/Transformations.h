@@ -29,11 +29,10 @@ namespace pip
 
 			auto polymorf(const pip::transformations::ARCorrection<INPUT>& arg)
 			{
-				auto myFilter = [&](const auto& i)
+				return [&](const auto& i)
 				{
 					return arg.apply(i, correctionFactor);
 				};
-				return myFilter;
 			}
 		};
 	};

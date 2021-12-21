@@ -51,11 +51,10 @@ namespace pip
 
 			auto polymorf(const pip::filters::Area<INPUT>& arg)
 			{
-				auto myFilter = [&](const auto& i)
+				return [&](const auto& i)
 				{
 					return arg.apply(i, areaFactor);
 				};
-				return myFilter;
 			}
 
 			/// <summary>
@@ -65,11 +64,10 @@ namespace pip
 
 			auto polymorf(const pip::filters::Blur<INPUT>& arg)
 			{
-				auto myFilter = [&](const auto& i)
+				return [&](const auto& i)
 				{
 					return arg.apply(i, blurringFactor);
 				};
-				return myFilter;
 			}
 
 			/// <summary>
@@ -77,11 +75,10 @@ namespace pip
 			/// </summary>
 			auto polymorf(const pip::filters::Breach<INPUT>& arg)
 			{
-				auto myFilter = [&](const auto& i)
+				return [&](const auto& i)
 				{
 					return arg.apply(i);
 				};
-				return myFilter;
 			}
 		};
 	};
