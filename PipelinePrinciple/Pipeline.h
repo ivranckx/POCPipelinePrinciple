@@ -15,22 +15,22 @@ namespace pip
 		CascadedOperation(const std::vector<std::variant<Ops...>> &operations) : operations(operations) {};
 
 		template <typename INPUT = double>
-		auto filter(const std::vector<INPUT> &input)
+		auto filter(const std::vector<INPUT>& input)
 		{
 			std::vector<INPUT> filteredInput;
 			for (const auto& operation : operations)
 			{
-				std::visit([&](auto&& arg) 
-				{
-					for (const auto& i : input | std::views::filter(properties.polymorf(arg)))
+				std::visit([&](auto&& arg)
 					{
-						filteredInput.push_back(i);
-					}
-				}, operation);
+						for (const auto& i : input | std::views::filter(properties.polymorf(arg)))
+						{
+							filteredInput.push_back(i);
+						}
+					}, operation);
 			};
 
 			return filteredInput;
-		}
+		};
 
 		template <typename INPUT = double>
 		auto transform(const std::vector<INPUT>& input)
