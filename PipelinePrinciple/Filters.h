@@ -10,6 +10,11 @@ namespace pip
 		template <typename INPUT = double>
 		struct Blur
 		{
+
+			/// <summary>
+			/// If we make this type specific, i.e. INPUT = cv::Mat, the compiler will automatically grab the right function;
+			/// Remove the template argument if things come together!  
+			/// </summary>
 			std::function<bool(const INPUT&, double)> apply = [](const INPUT &input, double blurringFactor = 0)
 			{
 				std::cout << "\t - Blur filter applied with factor = " << blurringFactor << std::endl;
@@ -48,7 +53,7 @@ namespace pip
 			/// Area filter properties & functionality
 			/// </summary>
 			int areaFactor = 0;
-
+			
 			auto polymorf(const pip::filters::Area<INPUT>& arg)
 			{
 				return [&](const auto& i)
