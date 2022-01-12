@@ -43,6 +43,7 @@
   <ItemGroup>
     <ClInclude Include="Filters.h" />
     <ClInclude Include="Pipeline.h" />
+    <ClInclude Include="SuperSealOperation.h" />
     <ClInclude Include="Transformations.h" />
   </ItemGroup>
   <ItemGroup>

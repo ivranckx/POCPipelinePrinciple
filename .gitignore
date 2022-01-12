@@ -20,3 +20,8 @@ PipelinePrinciple/x64/Debug/
 *.opendb
 
 .vs/PipelinePrinciple/v16/.suo
+x64/Release/UnitTests.exe.gta.testdurations
+x64/Release/UnitTests.exe
+*.exe
+*.log
+*.obj

@@ -1,0 +1,48 @@
+<Playlist Version="2.0">
+  <Rule Name="Includes" Match="Any">
+    <Rule Match="All">
+      <Property Name="Solution" />
+      <Rule Match="Any">
+        <Rule Match="All">
+          <Property Name="Project" Value="UnitTests" />
+          <Rule Match="Any">
+            <Rule Match="All">
+              <Property Name="Namespace" Value="" />
+              <Rule Match="Any">
+                <Rule Match="All">
+                  <Property Name="Class" Value="TestCascadedOperations" />
+                  <Rule Match="Any">
+                    <Rule Match="All">
+                      <Property Name="TestWithNormalizedFullyQualifiedName" Value="TestCascadedOperations.TestIfMultipleFiltersCanBeApplied" />
+                      <Rule Match="Any">
+                        <Property Name="DisplayName" Value="TestCascadedOperations.TestIfMultipleFiltersCanBeApplied" />
+                      </Rule>
+                    </Rule>
+                    <Rule Match="All">
+                      <Property Name="TestWithNormalizedFullyQualifiedName" Value="TestCascadedOperations.TestIfOneFilterCanBeApplied" />
+                      <Rule Match="Any">
+                        <Property Name="DisplayName" Value="TestCascadedOperations.TestIfOneFilterCanBeApplied" />
+                      </Rule>
+                    </Rule>
+                    <Rule Match="All">
+                      <Property Name="TestWithNormalizedFullyQualifiedName" Value="TestCascadedOperations.TestIfOneOperationCanBeApplied" />
+                      <Rule Match="Any">
+                        <Property Name="DisplayName" Value="TestCascadedOperations.TestIfOneOperationCanBeApplied" />
+                      </Rule>
+                    </Rule>
+                    <Rule Match="All">
+                      <Property Name="TestWithNormalizedFullyQualifiedName" Value="TestCascadedOperations.TestIfTwoFiltersCanBeApplied" />
+                      <Rule Match="Any">
+                        <Property Name="DisplayName" Value="TestCascadedOperations.TestIfTwoFiltersCanBeApplied" />
+                      </Rule>
+                    </Rule>
+                  </Rule>
+                </Rule>
+              </Rule>
+            </Rule>
+          </Rule>
+        </Rule>
+      </Rule>
+    </Rule>
+  </Rule>
+</Playlist>
