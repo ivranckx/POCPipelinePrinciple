@@ -1,8 +1,8 @@
 #pragma once
 
-#include "CascadedFilters.h"
-#include "CascadedTransformations.h"
-#include "CascadedOperation.h"
+#include "Filters.h"
+#include "Transformations.h"
+#include "Pipeline.h"
 
 namespace pip
 {

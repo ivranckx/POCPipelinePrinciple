@@ -25,3 +25,7 @@ x64/Release/UnitTests.exe
 *.exe
 *.log
 *.obj
+*.exe
+*.log
+*.db
+*.db
