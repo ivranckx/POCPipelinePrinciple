@@ -41,10 +41,10 @@
     <LibraryPath>D:\POCPipelinePrinciple\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.5\lib\native\v140\windesktop\msvcstl\static\rt-dyn\x64\Release;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemGroup>
-    <ClInclude Include="Filters.h" />
-    <ClInclude Include="Pipeline.h" />
+    <ClInclude Include="CascadedFilters.h" />
+    <ClInclude Include="CascadedOperation.h" />
     <ClInclude Include="SuperSealOperation.h" />
-    <ClInclude Include="Transformations.h" />
+    <ClInclude Include="CascadedTransformations.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
