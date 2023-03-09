@@ -1,1 +1,8 @@
-﻿  UnitTests.vcxproj -> D:\POCPipelinePrinciple\x64\Release\UnitTests.exe
+﻿  pch.cpp
+  testCascadedOperations.cpp
+  testClassifierOperations.cpp
+D:\Libraries\torchrelease\libtorch\include\c10\macros\Macros.h(189,20): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\POCPipelinePrinciple\UnitTests\testClassifierOperations.cpp(12,23): warning C4101: 'aKernel': unreferenced local variable
+  Generating Code...
+     Creating library D:\POCPipelinePrinciple\x64\Release\UnitTests.lib and object D:\POCPipelinePrinciple\x64\Release\UnitTests.exp
+  UnitTests.vcxproj -> D:\POCPipelinePrinciple\x64\Release\UnitTests.exe

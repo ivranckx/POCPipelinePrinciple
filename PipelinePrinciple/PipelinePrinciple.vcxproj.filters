@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="Filters.h" />
+    <ClInclude Include="Pipeline.h" />
+    <ClInclude Include="SuperSealOperation.h" />
+    <ClInclude Include="Transformations.h" />
+    <ClInclude Include="Kernels.h">
+      <Filter>kernels</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="kernels">
+      <UniqueIdentifier>{15a22c3a-5fd4-4746-ac4f-90fd8b73f2f8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

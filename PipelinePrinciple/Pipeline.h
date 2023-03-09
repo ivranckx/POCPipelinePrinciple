@@ -1,6 +1,6 @@
 #pragma once
 #include <variant>
-#include <ranges>
+#include <range/v3/all.hpp>
 #include "Filters.h"
 #include "Transformations.h"
 
@@ -22,7 +22,7 @@ namespace pip
 			{
 				std::visit([&](auto&& arg)
 					{
-						for (const auto& i : input | std::views::filter(properties.polymorf(arg)))
+						for (const auto& i : input | ranges::views::filter(properties.polymorf(arg)))
 						{
 							filteredInput.push_back(i);
 						}
@@ -40,7 +40,7 @@ namespace pip
 			{
 				auto result = std::visit([&](auto&& arg)
 					{						
-						for (const auto& i : input | std::views::transform(properties.polymorf(arg)))
+						for (const auto& i : input | ranges::views::transform(properties.polymorf(arg)))
 						{
 							transformedInput.push_back(i);
 						}

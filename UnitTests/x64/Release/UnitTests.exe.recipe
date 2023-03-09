@@ -2,9 +2,6 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\POCPipelinePrinciple\x64\Release\PipelinePrinciple.exe</FullPath>
-    </ProjectOutput>
-    <ProjectOutput>
       <FullPath>D:\POCPipelinePrinciple\x64\Release\UnitTests.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
